@@ -38,7 +38,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        return MostUse::saveCategories();
+        // return Category::latest()->where("created_at" , ">" , Carbon::now()->subMinutes(2))->delete();
+
+        // return MostUse::saveCategories();
 
        
         // return Category::all();
