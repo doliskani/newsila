@@ -76,7 +76,7 @@ $kernel->terminate($request, $response);
 //     {
 //             user: "newsich_user",
     
-//             pwd: "tT1Y^$$*$#YH@G",
+//             pwd: "tT1Y^$$*YH@G",
     
 //             roles:[
 //                 {role: "readWrite" , db:"newsich"}

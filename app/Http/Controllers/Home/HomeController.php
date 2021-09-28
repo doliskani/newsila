@@ -38,6 +38,8 @@ class HomeController extends Controller
     public function index()
     {
 
+        return MostUse::saveCategories();
+
        
         // return Category::all();
 
