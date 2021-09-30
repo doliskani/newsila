@@ -104,3 +104,10 @@ $kernel->terminate($request, $response);
 //       roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
 //     }
 //   )
+
+
+// UPDATE wp_options SET option_value = replace(option_value, 'https://karadstudio.com', 'https://eraartstudio.ir') WHERE option_name = 'home' OR option_name = 'siteurl';
+// UPDATE wp_posts SET guid = replace(guid, 'https://karadstudio.com','https://eraartstudio.ir');
+// UPDATE wp_posts SET post_content = replace(post_content, 'https://karadstudio.com', 'https://eraartstudio.ir');
+// UPDATE wp_postmeta SET meta_value = replace(meta_value,'https://karadstudio.com','https://eraartstudio.ir');
+// UPDATE wp_comments SET comment_author_url = REPLACE(comment_author_url, 'https://karadstudio.com', 'https://eraartstudio.ir');
