@@ -1,3 +1,5 @@
+
+
 @if(MostUse::switchSingleSources($post->source))
     @include('Home.single.pre' , ['post' => $post])
 

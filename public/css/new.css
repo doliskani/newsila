@@ -166,7 +166,13 @@ a, button {
     font-weight: 500 !important;
     font-family: 'Open Sans', sans-serif;
 }
-
+#main__footer{
+    font-size: 11px;
+    color: #827e7e;
+    font-family: initial;
+    border-top: 1px solid #eae4e4;
+    padding: 5px;
+}
 /*aside and header*/
 main .container-fluid > .row > .col-md-2 {
     padding-left: 0
@@ -315,7 +321,7 @@ main .col-lg-2 aside .text-secondary.active {
 }
 #headlines{
     padding-top: 45px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 #app h4 {

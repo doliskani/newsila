@@ -226,7 +226,7 @@ class HomeController extends Controller
     public function CustomSearchPaginate(Request $request, $lang)
     {
         $obj = (object)$request->obj;
-        return $articles = Post::RemovePostHasSpecialChars()->search($obj)->orderByDesc('date')->paginate($this->perSection + $this->perSection);
+        return Post::RemovePostHasSpecialChars()->search($obj)->orderByDesc('date')->paginate($this->perSection + $this->perSection);
 
     }
 
@@ -236,20 +236,20 @@ class HomeController extends Controller
 
 //        return Post::whereSource("cnn")->where('title' , 'like' , "%Refi rates%")->orderByDesc('date')->delete();
 
-        return Post::where('title' , 'like' , "%Elite unit works to%")->orderByDesc('date')->delete();
+        // return Post::where('title' , 'like' , "%Elite unit works to%")->orderByDesc('date')->delete();
 //        return Category::find('5dab0c0517dd3337fc0036e2');
 //        return file_get_contents('http://rss.cnn.com/~r/rss/edition_travel/~3/1BOuWpBmqSY/index.html');
 //        return Post::whereSource('foxnews')->orderByDesc('date')->delete();
 
 //       return MostUse::DeletePastPostsBySource('foxnews' , 200);
-        return $sources = Source::whereName("foxnews")->get();
-        foreach ($sources as $source) {
-//            if ($source->category == "entertainment") {
-            $baseReader = new BaseReader($source->feed, $source->category, $source->name, $source->lang);
-            $baseReader->read();
-//            }
-        }
-        return Post::whereSource('foxnews')->orderByDesc('date')->get();
+//         return $sources = Source::whereName("foxnews")->get();
+//         foreach ($sources as $source) {
+// //            if ($source->category == "entertainment") {
+//             $baseReader = new BaseReader($source->feed, $source->category, $source->name, $source->lang);
+//             $baseReader->read();
+// //            }
+//         }
+//         return Post::whereSource('foxnews')->orderByDesc('date')->get();
 
 
 //        return Post::latest()->get();

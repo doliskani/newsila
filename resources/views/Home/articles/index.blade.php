@@ -60,7 +60,7 @@
 
                 </div>
 
-
+                @include('Home.shares.footer')
             </div>
         </div>
 
